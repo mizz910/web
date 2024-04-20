@@ -1,11 +1,2 @@
-pages:
-  stage: deploy
-  script:
-  - mkdir .public
-  - cp -r * .public
-  - mv .public public
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
+# The Docker image that will be used to build your app
+image: node:lts
